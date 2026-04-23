@@ -72,7 +72,7 @@ class GlowmarktUKSmartMeter_driver extends Driver {
         // find a resource object in the resources array whose name property is 'electricity consumption'
         let resources = virtualEntity.resources;
         function isElecCons(resource) {
-          return resource.name === 'electricity consumption';
+          return resource.name === 'electricity cost';
         }
         let elec_cons_res = resources.find(isElecCons);
         // if no such resource found, just return the first resource and hope that's right
